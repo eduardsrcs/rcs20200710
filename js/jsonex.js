@@ -1,5 +1,3 @@
-
-
 loadDoc('https://jsonplaceholder.typicode.com/users', function(data){
   renderUsers(data)
 })
@@ -7,7 +5,6 @@ loadDoc('https://jsonplaceholder.typicode.com/users', function(data){
 function renderUsers(data) {
   let out = ''
   data.forEach(element => {
-    console.log(element)
     out += `<div class="users"><a href="userdetails.html?id=${element.id}">${element.name}</a><br>`
     out += `<span class="comName">${element.company.name}</span>`
     out += `</div>`
