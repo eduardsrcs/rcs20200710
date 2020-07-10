@@ -1,4 +1,4 @@
-loadDoc('https://jsonplaceholder.typicode.com/users', function(data){
+getData('https://jsonplaceholder.typicode.com/users', function(data){
   renderUsers(data)
 })
 

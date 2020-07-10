@@ -1,7 +1,6 @@
-const urlParam = new URLSearchParams(window.location.search);
-const uId = urlParam.get('id')
+const uId = getParam('id')
 
-loadDoc('https://jsonplaceholder.typicode.com/users/' + uId , function(data){
+getData('https://jsonplaceholder.typicode.com/users/' + uId , function(data){
   renderUser(data)
 })
 
